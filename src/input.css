@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-btn-small{
+    @apply relative flex h-8 w-8 items-center justify-center rounded-md bg-gray-400 dark:bg-gray-500/60 dark:text-white p-1;
+}
+
+.my-mini-sidebar{
+    @apply hover:ml-5 justify-end pr-4 text-black dark:text-white dark:bg-red-700 dark:hover:text-black hover:bg-red-800 hover:text-white w-full bg-red-500 p-5 rounded-full transform ease-in-out duration-300 flex;
+}
+
+.my-max-sidebar{
+    @apply w-full hover:bg-red-800 hover:text-white bg-red-200 dark:bg-red-600 dark:hover:bg-red-500 dark:text-white dark:hover:text-gray-950 font-semibold text-black p-2 pl-6 transform ease-in-out duration-300 flex flex-row items-center space-x-2;
+}
+
+.my-card-item{
+    @apply bg-white dark:bg-gray-600 p-4 shadow-md rounded-md border dark:border-gray-500;
+}
+
+.my-card-item-heading{
+    @apply inline-flex rounded-md bg-gray-300 dark:bg-gray-500/60 p-3 w-full items-center;
+}
+
+.my-card-heading-font{
+    @apply font-bold text-lg text-black dark:text-gray-200 font-sans ml-2;
+}
+
+.image-container {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    transform: translateX(0%) translateY(-170%);
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    flex: auto;
+    flex-shrink: 0;
+}
